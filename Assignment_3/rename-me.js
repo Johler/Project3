@@ -89,9 +89,17 @@ var getGas = function (cash){
 var gasFilled = getGas(25)
 console.log("We got " + gasFilled + " gallons in our tank.");
 
-//Number Function with For Loop  Waitin
+//Number Function with For Loop  Waiting
 var waitingInLine = function (ride) {
 	var rideNames = [ride],
-		minutesThisLine = minutesInLine[rideNumber];
-	console.log("At " + rideName + " we waited in line for " + minutesThisLine + " minutes.");
+		minutesThisLine = minutesInLine[ride];
+	console.log("At " + rideNames + " we waited in line for " + minutesThisLine + " minutes.");
+	for (var minutes = 0; minutes < minutesThisLine; minutes +=5) {
+		var minutesLeft = minutesThisLine - minutes;
+		console.log("We have " + minutesLeft + " minutes until we get to ride " + rideNames[i] + "!");
+	}
+	console.log("That ride was awesome!");
+};
+for (var i = 0; i < rideNames.length; i++) {
+	waitingInLine(rideNames[i]);
 };
