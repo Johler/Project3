@@ -103,3 +103,18 @@ var waitingInLine = function (ride) {
 for (var i = 0; i < rideNames.length; i++) {
 	waitingInLine(rideNames[i]);
 };
+
+//String Function with return string.
+var rideItAgain = function(ridesCompleted) {
+	var sickness
+		sicknessFull = 100;
+	if (sicknessFull > ridesCompleted) {
+	console.log("Right on!  Let's go!");
+	} else {
+	sickness = (ridesCompleted / 25);
+	}
+	return sickness;
+};
+var howSick = rideItAgain(3)
+console.log("I am too sick!");
+
