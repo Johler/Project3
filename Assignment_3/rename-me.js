@@ -118,3 +118,13 @@ var rideItAgain = function(ridesCompleted) {
 var howSick = rideItAgain(3)
 console.log("I am too sick!");
 
+//Boolean with boolean return
+var timeToGo = function (tooTired){
+if (tooTired === true) {
+	console.log("Everyone is exhausted from all of the fun today.  It is time to head home.");
+	} else {
+	console.log("Let's stay for one more ride!");
+	return tooTired;
+	}
+};
+var tooTiredReturn = timeToGo(true);
